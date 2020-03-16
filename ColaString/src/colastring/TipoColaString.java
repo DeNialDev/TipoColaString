@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  *
  * @author danie
  */
-public class ColaString {
+public class TipoColaString {
 
     final static int MAX_ELEMENTOS = 10;
     private static int frente;
@@ -29,7 +29,7 @@ public class ColaString {
         return MAX_ELEMENTOS;
     }
 
-    public ColaString() {
+    public TipoColaString() {
         frente = 0;
         finall = -1;
         elemento = new String[MAX_ELEMENTOS];
@@ -80,7 +80,7 @@ public class ColaString {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        ColaString cola = new ColaString();
+        TipoColaString cola = new TipoColaString();
         for (int i = 0; i < cola.Size()-5; i++) {
             System.out.println("Ingrese un nombre");
             cola.insertar(br.readLine());
